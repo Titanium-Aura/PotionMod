@@ -1,4 +1,4 @@
-package net.titatniumaura.potionmod;
+package net.titaniumaura.potionmod;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package net.titatniumaura.potionmod;
+package net.titaniumaura.potionmod;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
