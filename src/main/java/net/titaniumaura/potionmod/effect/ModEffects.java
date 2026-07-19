@@ -13,7 +13,7 @@ public class ModEffects {
             DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, PotionMod.MODID);
 
     public static final Holder<MobEffect> SPIKY = MOB_EFFECTS.register("spiky",
-            () -> new SpikyEffect(MobEffectCategory.NEUTRAL, 0x6E003B));
+            () -> new SpikyEffect(MobEffectCategory.BENEFICIAL, 0x6E003B));
 
 
     public static void register(IEventBus eventBus) {
