@@ -15,6 +15,9 @@ public class ModEffects {
     public static final Holder<MobEffect> SPIKY = MOB_EFFECTS.register("spiky",
             () -> new SpikyEffect(MobEffectCategory.BENEFICIAL, 0x6E003B));
 
+    public static final Holder<MobEffect> LIGHTNING = MOB_EFFECTS.register("lightning",
+            () -> new LightningEffect(MobEffectCategory.HARMFUL, 0x306EF0));
+
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
