@@ -1,5 +1,9 @@
 package net.titaniumaura.potionmod;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Items;
 import net.titaniumaura.potionmod.block.ModBlocks;
 import net.titaniumaura.potionmod.component.ModDataComponents;
 import net.titaniumaura.potionmod.effect.ModEffects;
