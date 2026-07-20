@@ -12,6 +12,7 @@ import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.ProjectileImpactEvent;
@@ -25,7 +26,7 @@ public class ModEvents {
     @SubscribeEvent
     public static void onSplashHitEffect(ProjectileImpactEvent event) {
         Projectile projectile = event.getProjectile();
-        HitResult hitResult = event.getRayTraceResult();
+        Vec3 location = event.getRayTraceResult().getLocation();
 
         if (projectile instanceof ThrownPotion potion) {
             PotionContents potioncontents = potion.getItem().getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY);
@@ -34,7 +35,11 @@ public class ModEvents {
                 if (instance.getEffect().value() instanceof SplashAndLingeringEffect effect) {
                     if (!potion.getItem().is(Items.LINGERING_POTION)) {
                         if (!projectile.level().isClientSide()) {
-                            effect.onSplashHit((ServerLevel) projectile.level(), new BlockPos((int) hitResult.getLocation().x,(int) hitResult.getLocation().y,(int) hitResult.getLocation().z));
+                            effect.onSplashHit((ServerLevel) projectile.level(), new BlockPos((int) location.x,(int) location.y,(int) location.z));
+                        }
+                    } else {
+                        if (!projectile.level().isClientSide()) {
+                            effect.onLingeringHit((ServerLevel) projectile.level(), new BlockPos((int) location.x,(int) location.y,(int) location.z));
                         }
                     }
                 }
