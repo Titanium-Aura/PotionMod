@@ -1,5 +1,6 @@
 package net.titaniumaura.potionmod.effect;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.InstantenousMobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -31,6 +32,10 @@ public class LightningEffect extends InstantenousMobEffect {
 
         EntityType.LIGHTNING_BOLT.spawn((ServerLevel) livingEntity.level(), livingEntity.getOnPos(), MobSpawnType.TRIGGERED);
 
+    }
+
+    public void onSplashHit(ServerLevel level, BlockPos pos) {
+        EntityType.LIGHTNING_BOLT.spawn(level, pos, MobSpawnType.TRIGGERED);
     }
 
 }
