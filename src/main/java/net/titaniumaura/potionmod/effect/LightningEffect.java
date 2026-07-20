@@ -11,7 +11,7 @@ import net.minecraft.world.entity.MobSpawnType;
 
 import javax.annotation.Nullable;
 
-public class LightningEffect extends InstantenousMobEffect {
+public class LightningEffect extends InstantenousSplashAndLingeringEffect {
 
     public LightningEffect(MobEffectCategory category, int color) {
         super(category, color);
@@ -34,6 +34,7 @@ public class LightningEffect extends InstantenousMobEffect {
 
     }
 
+    @Override
     public void onSplashHit(ServerLevel level, BlockPos pos) {
         EntityType.LIGHTNING_BOLT.spawn(level, pos, MobSpawnType.TRIGGERED);
     }
