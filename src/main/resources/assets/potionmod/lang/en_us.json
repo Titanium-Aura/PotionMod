@@ -1,4 +1,7 @@
 {
-  "effect.potionmod.spiky": "Spikey :3",
-  "effect.potionmod.lightning": "Lightiny :3"
+  "effect.potionmod.spiky": "Arrow Storm",
+  "item.minecraft.potion.effect.lightning_potion": "Potion of Lightning",
+  "item.minecraft.splash_potion.effect.lightning_potion": "Splash Potion of Lightning",
+  "item.minecraft.lingering_potion.effect.lightning_potion": "Lingering Potion of Lightning",
+  "effect.potionmod.lightning": "Lightning"
 }

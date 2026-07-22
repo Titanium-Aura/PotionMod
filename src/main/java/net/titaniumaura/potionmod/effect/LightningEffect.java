@@ -14,6 +14,7 @@ import net.minecraft.world.phys.AABB;
 import javax.annotation.Nullable;
 import java.util.List;
 
+
 public class LightningEffect extends InstantenousSplashAndLingeringEffect {
     public LightningEffect(MobEffectCategory category, int color) {
         super(category, color);
