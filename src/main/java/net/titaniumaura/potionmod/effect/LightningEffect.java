@@ -41,6 +41,12 @@ public class LightningEffect extends InstantenousSplashAndLingeringEffect {
     }
 
 
+    @Override
+    public void onLingeringHit(ServerLevel level, BlockPos pos) {
+        level.setWeatherParameters(0, 15600, true, true);
+    }
+
+
     private void spawnLightning(ServerLevel level, BlockPos pos, int amplifier) {
         for (int i = -1; i < amplifier; i++) {
             EntityType.LIGHTNING_BOLT.spawn(level, pos, MobSpawnType.TRIGGERED);
