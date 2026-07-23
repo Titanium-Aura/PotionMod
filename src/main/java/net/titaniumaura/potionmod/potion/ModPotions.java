@@ -16,7 +16,7 @@ public class ModPotions {
     public static final Holder<Potion> LIGHTNING = POTIONS.register("lightning_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.LIGHTNING)));
     public static final Holder<Potion> FRAIL = POTIONS.register("frail_potion",
-            () -> new Potion(new MobEffectInstance(ModEffects.LIGHTNING)));
+            () -> new Potion(new MobEffectInstance(ModEffects.FRAIL)));
 
 
     public static void register(IEventBus eventBus) {
