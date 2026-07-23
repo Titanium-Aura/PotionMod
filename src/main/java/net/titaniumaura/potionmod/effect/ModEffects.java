@@ -32,6 +32,9 @@ public class ModEffects {
                             -6.0,
                             AttributeModifier.Operation.ADD_VALUE));
 
+    public static final Holder<MobEffect> ELEVATION = MOB_EFFECTS.register("elevation",
+            () -> new ElevationEffect(MobEffectCategory.NEUTRAL, 0xFFFFFF));
+
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
