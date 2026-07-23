@@ -1,11 +1,18 @@
 {
   "effect.potionmod.spiky": "Arrow Storm",
+  "effect.potionmod.lightning": "Lightning",
+  "effect.potionmod.frail": "Frail",
+  "effect.potionmod.vulnerable": "Vulnerable",
+
   "item.minecraft.potion.effect.lightning_potion": "Potion of Lightning",
   "item.minecraft.splash_potion.effect.lightning_potion": "Splash Potion of Lightning",
   "item.minecraft.lingering_potion.effect.lightning_potion": "Lingering Potion of Lightning",
+
   "item.minecraft.potion.effect.frail_potion": "Potion of Frail",
   "item.minecraft.splash_potion.effect.frail_potion": "Splash Potion of Frail",
   "item.minecraft.lingering_potion.effect.frail_potion": "Lingering Potion of Frail",
-  "effect.potionmod.lightning": "Lightning",
-  "effect.potionmod.frail": "Frail"
+
+  "item.minecraft.potion.effect.vulnerable_potion": "Potion of Vulnerability",
+  "item.minecraft.splash_potion.effect.vulnerable_potion": "Splash Potion of Vulnerability",
+  "item.minecraft.lingering_potion.effect.vulnerable_potion": "Lingering Potion of Vulnerability"
 }
