@@ -3,5 +3,9 @@
   "item.minecraft.potion.effect.lightning_potion": "Potion of Lightning",
   "item.minecraft.splash_potion.effect.lightning_potion": "Splash Potion of Lightning",
   "item.minecraft.lingering_potion.effect.lightning_potion": "Lingering Potion of Lightning",
-  "effect.potionmod.lightning": "Lightning"
+  "item.minecraft.potion.effect.frail_potion": "Potion of Frail",
+  "item.minecraft.splash_potion.effect.frail_potion": "Splash Potion of Frail",
+  "item.minecraft.lingering_potion.effect.frail_potion": "Lingering Potion of Frail",
+  "effect.potionmod.lightning": "Lightning",
+  "effect.potionmod.frail": "Frail"
 }

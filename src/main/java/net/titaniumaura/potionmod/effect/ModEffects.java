@@ -18,6 +18,9 @@ public class ModEffects {
     public static final Holder<MobEffect> LIGHTNING = MOB_EFFECTS.register("lightning",
             () -> new LightningEffect(MobEffectCategory.HARMFUL, 0x306EF0));
 
+    public static final Holder<MobEffect> FRAIL = MOB_EFFECTS.register("frail",
+            () -> new FrailEffect(MobEffectCategory.HARMFUL, 0xF9F6EE));
+
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
