@@ -35,6 +35,9 @@ public class ModEffects {
     public static final Holder<MobEffect> ELEVATION = MOB_EFFECTS.register("elevation",
             () -> new ElevationEffect(MobEffectCategory.NEUTRAL, 0xFFFFFF));
 
+    public static final Holder<MobEffect> DESCENT = MOB_EFFECTS.register("descent",
+            () -> new DescentEffect(MobEffectCategory.NEUTRAL, 0xFFFFC5));
+
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

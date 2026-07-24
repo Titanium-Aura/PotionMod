@@ -19,6 +19,9 @@ public class ModPotions {
     public static final Holder<Potion> ELEVATION = POTIONS.register("elevation_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.ELEVATION)));
 
+    public static final Holder<Potion> DESCENT = POTIONS.register("descent_potion",
+            () -> new Potion(new MobEffectInstance(ModEffects.DESCENT)));
+
     public static final Holder<Potion> FRAIL = POTIONS.register("frail_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.FRAIL, 1500)));
 
