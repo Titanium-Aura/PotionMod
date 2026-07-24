@@ -5,6 +5,7 @@
   "effect.potionmod.vulnerable": "Vulnerable",
   "effect.potionmod.elevation": "Elevation",
   "effect.potionmod.descent": "Descent",
+  "effect.potionmod.detonation": "Detonation",
 
 
   "item.minecraft.potion.effect.lightning_potion": "Potion of Lightning",
@@ -29,7 +30,10 @@
 
   "item.minecraft.potion.effect.spiky_potion": "Potion of Spiky",
   "item.minecraft.splash_potion.effect.spiky_potion": "Splash Potion of Spiky",
-  "item.minecraft.lingering_potion.effect.spiky_potion": "Lingering Potion of Spiky"
+  "item.minecraft.lingering_potion.effect.spiky_potion": "Lingering Potion of Spiky",
 
+  "item.minecraft.potion.effect.detonation_potion": "Potion of Detonation",
+  "item.minecraft.splash_potion.effect.detonation_potion": "Splash Potion of Detonation",
+  "item.minecraft.lingering_potion.effect.detonation_potion": "Lingering Potion of Detonation"
 }
 
