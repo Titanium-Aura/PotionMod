@@ -28,6 +28,9 @@ public class ModPotions {
     public static final Holder<Potion> VULNERABLE = POTIONS.register("vulnerable_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.VULNERABLE, 1200)));
 
+    public static final Holder<Potion> SPIKY = POTIONS.register("spiky_potion",
+            () -> new Potion(new MobEffectInstance(ModEffects.SPIKY, 1200)));
+
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);

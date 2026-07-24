@@ -1,5 +1,5 @@
 {
-  "effect.potionmod.spiky": "Arrow Storm",
+  "effect.potionmod.spiky": "Spiky",
   "effect.potionmod.lightning": "Lightning",
   "effect.potionmod.frail": "Frail",
   "effect.potionmod.vulnerable": "Vulnerable",
@@ -25,6 +25,11 @@
 
   "item.minecraft.potion.effect.descent_potion": "Potion of Descent",
   "item.minecraft.splash_potion.effect.descent_potion": "Splash Potion of Descent",
-  "item.minecraft.lingering_potion.effect.descent_potion": "Lingering Potion of Descent"
+  "item.minecraft.lingering_potion.effect.descent_potion": "Lingering Potion of Descent",
+
+  "item.minecraft.potion.effect.spiky_potion": "Potion of Spiky",
+  "item.minecraft.splash_potion.effect.spiky_potion": "Splash Potion of Spiky",
+  "item.minecraft.lingering_potion.effect.spiky_potion": "Lingering Potion of Spiky"
+
 }
 
