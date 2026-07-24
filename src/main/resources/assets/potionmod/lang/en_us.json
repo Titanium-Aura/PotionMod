@@ -4,6 +4,8 @@
   "effect.potionmod.frail": "Frail",
   "effect.potionmod.vulnerable": "Vulnerable",
   "effect.potionmod.elevation": "Elevation",
+  "effect.potionmod.descent": "Descent",
+
 
   "item.minecraft.potion.effect.lightning_potion": "Potion of Lightning",
   "item.minecraft.splash_potion.effect.lightning_potion": "Splash Potion of Lightning",
@@ -19,5 +21,10 @@
 
   "item.minecraft.potion.effect.elevation_potion": "Potion of Elevation",
   "item.minecraft.splash_potion.effect.elevation_potion": "Splash Potion of Elevation",
-  "item.minecraft.lingering_potion.effect.elevation_potion": "Lingering Potion of Elevation"
+  "item.minecraft.lingering_potion.effect.elevation_potion": "Lingering Potion of Elevation",
+
+  "item.minecraft.potion.effect.descent_potion": "Potion of Descent",
+  "item.minecraft.splash_potion.effect.descent_potion": "Splash Potion of Descent",
+  "item.minecraft.lingering_potion.effect.descent_potion": "Lingering Potion of Descent"
 }
+
