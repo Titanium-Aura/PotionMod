@@ -33,17 +33,19 @@ public class DetonationEffect extends InstantenousSpecialEffect {
 
 
     @Override
-    public void onSplashHit(ServerLevel level, BlockPos pos) {
-        if (!level.isClientSide()) {
-            level.explode(null, pos.getX(), pos.getY(), pos.getZ(), 3f, Level.ExplosionInteraction.MOB);
-        }
+    public void onSplashHit(ServerLevel level, BlockPos pos, int amplifier) {
+        level.explode(null, pos.getX(), pos.getY(), pos.getZ(), 3f, Level.ExplosionInteraction.MOB);
     }
 
 
     @Override
-    public void onLingeringHit(ServerLevel level, BlockPos pos) {
-        if (!level.isClientSide()) {
-            level.explode(null, pos.getX(), pos.getY(), pos.getZ(), 3f, Level.ExplosionInteraction.MOB);
-        }
+    public void onLingeringHit(ServerLevel level, BlockPos pos, int amplifier) {
+        level.explode(null, pos.getX(), pos.getY(), pos.getZ(), 3f, Level.ExplosionInteraction.MOB);
+    }
+
+
+    @Override
+    public void applyLingerRepeat(ServerLevel level, BlockPos pos, int amplifier) {
+        level.explode(null, pos.getX(), pos.getY(), pos.getZ(), 3f, Level.ExplosionInteraction.MOB);
     }
 }

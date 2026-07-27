@@ -12,8 +12,10 @@ public class SpecialEffect extends MobEffect {
         super(category, color);
     }
 
-    public void onSplashHit(ServerLevel level, BlockPos pos) {}
+    public void onSplashHit(ServerLevel level, BlockPos pos, int amplifier) {}
     public void onArrowHit(ServerLevel level, BlockPos pos, LivingEntity entity) {}
-    public void onLingeringHit(ServerLevel level, BlockPos pos) {}
+    public void onLingeringHit(ServerLevel level, BlockPos pos, int amplifier) {}
     public void onDrink(LivingEntity entity, ItemStack potion, int amplifier) {}
+
+    public void applyLingerRepeat(ServerLevel level, BlockPos pos, int amplifier) {}
 }

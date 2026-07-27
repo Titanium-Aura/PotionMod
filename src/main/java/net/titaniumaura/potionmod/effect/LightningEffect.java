@@ -32,6 +32,7 @@ public class LightningEffect extends InstantenousSpecialEffect {
        // spawnLightning((ServerLevel) livingEntity.level(), livingEntity.getOnPos(), amplifier);
     //}
 
+
     @Override
     public void onDrink(LivingEntity entity, ItemStack potion, int amplifier) {
         if (!entity.level().isClientSide()) {
@@ -40,14 +41,20 @@ public class LightningEffect extends InstantenousSpecialEffect {
     }
 
     @Override
-    public void onSplashHit(ServerLevel level, BlockPos pos) {
+    public void onSplashHit(ServerLevel level, BlockPos pos, int amplifier) {
         spawnLightning(level, pos, 0);
     }
 
 
     @Override
-    public void onLingeringHit(ServerLevel level, BlockPos pos) {
+    public void onLingeringHit(ServerLevel level, BlockPos pos, int amplifier) {
         level.setWeatherParameters(0, 15600, true, true);
+    }
+
+
+    @Override
+    public void applyLingerRepeat(ServerLevel level, BlockPos pos, int amplifier) {
+        spawnLightning(level, pos, amplifier);
     }
 
 

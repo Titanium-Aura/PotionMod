@@ -49,11 +49,11 @@ public class ModEvents {
                 if (instance.getEffect().value() instanceof SpecialEffect effect) {
                     if (!potion.getItem().is(Items.LINGERING_POTION)) {
                         if (!projectile.level().isClientSide()) {
-                            effect.onSplashHit((ServerLevel) projectile.level(), new BlockPos((int) location.x,(int) location.y,(int) location.z));
+                            effect.onSplashHit((ServerLevel) projectile.level(), new BlockPos((int) location.x,(int) location.y,(int) location.z), instance.getAmplifier());
                         }
                     } else {
                         if (!projectile.level().isClientSide()) {
-                            effect.onLingeringHit((ServerLevel) projectile.level(), new BlockPos((int) location.x,(int) location.y,(int) location.z));
+                            effect.onLingeringHit((ServerLevel) projectile.level(), new BlockPos((int) location.x,(int) location.y,(int) location.z), instance.getAmplifier());
                         }
                     }
                 }

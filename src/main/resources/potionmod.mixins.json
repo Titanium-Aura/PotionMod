@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.titaniumaura.potionmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AreaCloudMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequired": 1
+  }
+}
