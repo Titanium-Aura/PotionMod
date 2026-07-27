@@ -8,7 +8,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class DetonationEffect extends InstantenousSplashAndLingeringEffect{
+public class DetonationEffect extends InstantenousSpecialEffect {
     public DetonationEffect(MobEffectCategory category, int color) {
         super(category, color);
     }

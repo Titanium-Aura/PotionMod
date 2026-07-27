@@ -4,12 +4,16 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 
-public class SplashAndLingeringEffect extends MobEffect {
-    public SplashAndLingeringEffect(MobEffectCategory category, int color) {
+public class SpecialEffect extends MobEffect {
+    public SpecialEffect(MobEffectCategory category, int color) {
         super(category, color);
     }
 
     public void onSplashHit(ServerLevel level, BlockPos pos) {}
+    public void onArrowHit(ServerLevel level, BlockPos pos, LivingEntity entity) {}
     public void onLingeringHit(ServerLevel level, BlockPos pos) {}
+    public void onDrink(LivingEntity entity, ItemStack potion, int amplifier) {}
 }
