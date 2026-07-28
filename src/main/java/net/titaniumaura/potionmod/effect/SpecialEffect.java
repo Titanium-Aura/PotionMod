@@ -13,7 +13,7 @@ public class SpecialEffect extends MobEffect {
     }
 
     public void onSplashHit(ServerLevel level, BlockPos pos, int amplifier) {}
-    public void onArrowHit(ServerLevel level, BlockPos pos, LivingEntity entity) {}
+    public void onArrowHit(ServerLevel level, BlockPos pos, int amplifier) {}
     public void onLingeringHit(ServerLevel level, BlockPos pos, int amplifier) {}
     public void onDrink(LivingEntity entity, ItemStack potion, int amplifier) {}
 

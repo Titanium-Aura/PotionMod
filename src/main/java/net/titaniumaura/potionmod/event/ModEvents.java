@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.item.ItemStack;
@@ -55,6 +56,20 @@ public class ModEvents {
                         if (!projectile.level().isClientSide()) {
                             effect.onLingeringHit((ServerLevel) projectile.level(), new BlockPos((int) location.x,(int) location.y,(int) location.z), instance.getAmplifier());
                         }
+                    }
+                }
+            }
+        }
+        if (projectile instanceof Arrow arrow) {
+            PotionContents potioncontents = arrow.getPickupItemStackOrigin().getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY);
+
+            for (MobEffectInstance instance : potioncontents.getAllEffects()) {
+                if (instance.getEffect().value() instanceof SpecialEffect effect) {
+                    if (!projectile.level().isClientSide()) {
+                        effect.onArrowHit(
+                                (ServerLevel) projectile.level(),
+                                new BlockPos((int) location.x,(int) location.y,(int) location.z),
+                                instance.getAmplifier());
                     }
                 }
             }

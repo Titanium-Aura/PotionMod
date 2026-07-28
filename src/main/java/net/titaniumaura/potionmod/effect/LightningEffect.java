@@ -18,19 +18,19 @@ public class LightningEffect extends InstantenousSpecialEffect {
     }
 
 
-   // @Override
-    //public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-    //    if (!livingEntity.level().isClientSide()) {
-           // spawnLightning((ServerLevel) livingEntity.level(), livingEntity.getOnPos(), amplifier);
-    //    }
-   //     return true;
-   // }
+   /* @Override
+    public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
+        if (!livingEntity.level().isClientSide()) {
+           spawnLightning((ServerLevel) livingEntity.level(), livingEntity.getOnPos(), amplifier);
+        }
+        return true;
+   }*/
 
 
-    //@Override
-    //public void applyInstantenousEffect(@Nullable Entity source, @Nullable Entity indirectSource, LivingEntity livingEntity, int amplifier, double health) {
-       // spawnLightning((ServerLevel) livingEntity.level(), livingEntity.getOnPos(), amplifier);
-    //}
+    /*@Override
+    public void applyInstantenousEffect(@Nullable Entity source, @Nullable Entity indirectSource, LivingEntity livingEntity, int amplifier, double health) {
+       spawnLightning((ServerLevel) livingEntity.level(), livingEntity.getOnPos(), amplifier);
+    }*/
 
 
     @Override
@@ -40,9 +40,10 @@ public class LightningEffect extends InstantenousSpecialEffect {
         }
     }
 
+
     @Override
     public void onSplashHit(ServerLevel level, BlockPos pos, int amplifier) {
-        spawnLightning(level, pos, 0);
+        spawnLightning(level, pos, amplifier);
     }
 
 
