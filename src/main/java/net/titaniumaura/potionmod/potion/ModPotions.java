@@ -25,6 +25,9 @@ public class ModPotions {
     public static final Holder<Potion> DETONATION = POTIONS.register("detonation_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.DETONATION)));
 
+    public static final Holder<Potion> TELEPORTATION = POTIONS.register("teleportation_potion",
+            () -> new Potion(new MobEffectInstance(ModEffects.TELEPORTATION)));
+
     public static final Holder<Potion> FRAIL = POTIONS.register("frail_potion",
             () -> new Potion(new MobEffectInstance(ModEffects.FRAIL, 1500)));
 

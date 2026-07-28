@@ -35,6 +35,9 @@ public class ModEffects {
     public static final Holder<MobEffect> ELEVATION = MOB_EFFECTS.register("elevation",
             () -> new ElevationEffect(MobEffectCategory.NEUTRAL, 0xFFFFFF));
 
+    public static final Holder<MobEffect> TELEPORTATION = MOB_EFFECTS.register("teleportation",
+            () -> new TeleportationEffect(MobEffectCategory.HARMFUL, 0xADD8E6));
+
     public static final Holder<MobEffect> DESCENT = MOB_EFFECTS.register("descent",
             () -> new DescentEffect(MobEffectCategory.NEUTRAL, 0xFFFFC5));
 

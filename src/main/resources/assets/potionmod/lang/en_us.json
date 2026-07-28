@@ -6,6 +6,7 @@
   "effect.potionmod.elevation": "Elevation",
   "effect.potionmod.descent": "Descent",
   "effect.potionmod.detonation": "Detonation",
+  "effect.potionmod.teleportation": "Teleportation",
 
 
   "item.minecraft.potion.effect.lightning_potion": "Potion of Lightning",
@@ -34,6 +35,10 @@
 
   "item.minecraft.potion.effect.detonation_potion": "Potion of Detonation",
   "item.minecraft.splash_potion.effect.detonation_potion": "Splash Potion of Detonation",
-  "item.minecraft.lingering_potion.effect.detonation_potion": "Lingering Potion of Detonation"
+  "item.minecraft.lingering_potion.effect.detonation_potion": "Lingering Potion of Detonation",
+
+  "item.minecraft.potion.effect.teleportation_potion": "Potion of Teleportation",
+  "item.minecraft.splash_potion.effect.teleportation_potion": "Splash Potion of Teleportation",
+  "item.minecraft.lingering_potion.effect.teleportation_potion": "Lingering Potion of Teleportation"
 }
 
